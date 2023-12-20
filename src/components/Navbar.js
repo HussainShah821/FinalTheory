@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import { Button } from "react-bootstrap";
 
 import Navbar from 'react-bootstrap/Navbar';
-import Logo from "./Assets/Images/Logo.png"
+import Logo from "./Assets/Images/logo.png"
 
 function MyNavbar() {
   return (
