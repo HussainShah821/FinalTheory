@@ -1,34 +1,32 @@
-import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import { Button } from "react-bootstrap";
+
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
-import Image from '../components/Assets/Images/logo.png';
-import { Link } from 'react-router-dom';
+import Logo from "./Assets/Images/Logo.png"
 
 function MyNavbar() {
   return (
-    <Navbar expand="lg" className="bg-light text-dark">
-      <Container>
-        <Navbar.Brand href="#home">
-           
-            <Link to="/" > <img src={Image} alt="logo" /> </Link>
-        </Navbar.Brand>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home"><img src={Logo} /></Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mx-auto" >
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link className={"text-dark"} href="#home"><Link to="/about" >About</Link></Nav.Link>
-            <Nav.Link className={"text-dark"} href="#link">Contact us</Nav.Link>
-            <Nav.Link className={"text-dark"} href="#link">TimeTable</Nav.Link>
-            <Nav.Link className={"text-dark"} href="#link">Live Location</Nav.Link>
-          </Nav>
-          <Nav>
-            <Button variant="danger">Sign In</Button>{' '}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+              <Nav.Link >Web3Makr</Nav.Link>
+                <Nav.Link >White paper</Nav.Link>
+                <Nav.Link >Services</Nav.Link>
+                <Nav.Link >Tool</Nav.Link>
+                <Nav.Link >Contact us</Nav.Link>
+              <Button variant="dark" style={{ borderColor: "#18ADE4", color: "#18ADE4", marginLeft: "110px" }}>
+                Start for Free
+              </Button>
+
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
   );
 }
 
