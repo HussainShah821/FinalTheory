@@ -8,6 +8,7 @@ import img4 from "./Assets/Images/Group 153.png";
 import img5 from "./Assets/Images/Group 154.png";
 import img6 from "./Assets/Images/Group 155.png";
 import img7 from "./Assets/Images/Group 156.png";
+import image2 from "./Assets/Images/img.png"
 
 function Section2() {
     const images = [img1, img2, img3, img4, img5, img6, img7];
@@ -44,6 +45,34 @@ function Section2() {
                     {/* Second Section */}
                     <Col md={8} className="d-flex align-items-center justify-content-center" style={{marginBottom: '30px',marginTop: '30px' }}>
                         <Image src={Rectangle1Image} alt="Rectangle1" fluid style={{ maxWidth: '55%', height: 'auto' }} />
+                    </Col>
+                </Row>
+            </Container>
+            <Container fluid style={{ margin: '30px 50px', marginBottom: '30px' }}>
+                <Row>
+                    {/* First Section */}
+                    <Col md={6} className="d-flex align-items-center justify-content-center">
+                        <Image src={image2} alt="Rectangle1" fluid style={{ maxWidth: '70%', height: 'auto' }} />
+                    </Col>
+
+                    {/* Second Section */}
+                    <Col md={6} className="d-flex align-items-center">
+                        <div>
+                            <h2 style={{ fontSize: '2rem', marginBottom: '20px', paddingRight: '30px' }}>
+                                Can be changed to customizable <br/>ready-made web3 <br/>dapps templates.
+                            </h2>
+
+
+                            <ol style={{ fontSize: '1rem', marginBottom: '30px' }}>
+                                <li>NFT(ERC721).</li>
+                                <li>DEFI</li>
+                                <li>Smart Contracts</li>
+                                <li>GameFi</li>
+                                <li>Metaverse</li>
+
+                            </ol>
+                            <Button variant="primary" style={{ backgroundColor: 'purple' }}>Start building</Button>
+                        </div>
                     </Col>
                 </Row>
             </Container>
